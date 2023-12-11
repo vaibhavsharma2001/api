@@ -2,16 +2,16 @@
 const express = require('express');
 const router = express.Router();
 const passport = require('passport');
-const authController = require('../controllers/authlogin');
-const authController = require('../controllers/authregister');
+const authlogs = require('../controllers/authlogin');
+const authregs = require('../controllers/authregister');
 
 // Route for user registration
 router.post('/register', [
     body('username').notEmpty().withMessage('Username is required'),
     body('password').notEmpty().withMessage('Password is required'),
-  ], authController.register);
+  ], authregs.authregister);
 
 // Route for user login
-router.post('/login', controllers.authlogin);
+router.post('/login', authlogs.authlogin);
 
 module.exports = router;
