@@ -3,7 +3,7 @@
 const express = require('express');
 const router = express.Router();
 const passport = require('passport');
-const Post = require('./post');
+const Post = require('../routes/postroutes');
 
 // Middleware to authenticate the user
 const authenticateUser = passport.authenticate('jwt', { session: false });
@@ -17,4 +17,3 @@ router.get('/dashboard', authenticateUser, async (req, res) => {
 
 module.exports = router;
 
-module.exports = router;
