@@ -1,6 +1,7 @@
 // controllers/authregister.js
 const User = require('../models/user'); // 
-
+const bcrypt=require("bcrypt");
+const { body, validationResult } = require('express-validator');
 exports.register = async (req, res) => {
   const { username, password } = req.body;
 
