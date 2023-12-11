@@ -9,7 +9,7 @@ const PORT =  process.env.PORT || 4000
 
 app.use(express.json());//0.0.0.0
 
-const db =mongoose.connect('mongodb://0.0.0.0:27017/taskdata',{
+const db =mongoose.connect('mongodb+srv://Vaibhav1111:0987654321@cluster0.lskthwg.mongodb.net/?retryWrites=true&w=majority',{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })//o.o.o.o:27017
