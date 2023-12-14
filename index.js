@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport');
 const cors = require('cors');
-const passportjs=require('../middleware/authenticate');
+const passportjs=require('../middleware/passport');
 const app = express();
 const PORT =  process.env.PORT || 4000
 
