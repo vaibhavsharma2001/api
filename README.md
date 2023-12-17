@@ -1,3 +1,7 @@
+
+# build command npm install
+#run command  npm start /nodemon index.js
+
 # RestApi crud <br>
 #project_root
 │
