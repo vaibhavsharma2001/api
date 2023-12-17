@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport');
 const cors = require('cors');
-const passportjs=require('../middleware/passport');
+// const passportjs=require('../middleware/passport');
 const app = express();
 const PORT =  process.env.PORT || 4000
 
@@ -26,7 +26,7 @@ const postRoutes = require('./routes/postroutes');
 const dashboardRoutes = require('./routes/dashboardroutes');
 
 app.use('/auth', authRoutes);
-app.use('/posts', postRoutes);
+app.use('/post', postRoutes);
 app.use('/dashboard', dashboardRoutes);
 
 // Error handling middleware
